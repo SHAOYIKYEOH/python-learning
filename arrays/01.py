@@ -30,7 +30,7 @@ print(arr2[-1])
 # initialize array of size n with default value of 1
 n = 5
 arr3 = [1] * 5
-print(arr3)
+print(arr3) # [1,1,1,1,1]
 print(len(arr3))
 
 # unpacking

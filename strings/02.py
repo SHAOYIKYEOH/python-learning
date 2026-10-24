@@ -11,3 +11,19 @@ print(strings)           # ['a', 'b', 'x', 'y']
 print("".join(strings))  # abxy
 print(",".join(strings)) # a,b,x,y
 
+# sort() 只会modify 不会return 一个新的list
+nameList = ["jack","bob","alice","tom"]
+result = nameList.sort()
+print(result) # None
+print(nameList) # ['alice', 'bob', 'jack', 'tom']
+
+
+# sorted() 不会modify，而是会return 一个新的list 
+nameList2 =  ["jack","bob","alice","tom"]
+result2 = sorted(nameList2)
+print(result2) # ['alice', 'bob', 'jack', 'tom']
+
+print(sorted('i_will_break_into_a_sorted_list'))
+print("".join(sorted('i_will_not_break_into_a_sorted_list'))) # _______aabdeeiiiiklllnnooorrssttttw
+
+# print("i_will_not_break_into_a_sorted_list".sort()) this wont work. str 没有sort 这个method
